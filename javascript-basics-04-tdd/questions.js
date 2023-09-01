@@ -1,33 +1,42 @@
 
 const stringSize = (text) => {
-
+    return text.length
 }
 const replaceCharacterE = (text) => {
 
+    return text.replace('e', ' ')
 }
 const concatString = (text1, text2) => {
-
+   
+    return text1+text2
 }
 const showChar5 = (text) => {
-
+    return text.charAt(4)
+    
 }
 const showChar9 = (text) => {
+    return text.slice(0,9)
 
 }
 const toCapitals = (text) => {
+    return text.toUpperCase();
 
 }
 const toLowerCase = (text) => {
 
+    return text.toLowerCase();
 }
 const removeSpaces = (text) => {
 
+    return text.trim();
 }
 const IsString = (text) => {
+    return typeof(text)==="string"
 
 }
 
 const getExtension = (text) => {
+    return text.substring (images/photo01.jpg,jpg)
 
 }
 const countSpaces = (text) => {
