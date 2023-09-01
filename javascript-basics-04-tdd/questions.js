@@ -36,75 +36,142 @@ const IsString = (text) => {
 }
 
 const getExtension = (text) => {
-    return text.substring (images/photo01.jpg,jpg)
+    const parts = text.split('.');
+    const extension = parts[parts.length - 1];
+  
+    return extension;
+  }
+  
+  const countSpaces = (text) => {
+    const words = text.split(' ');
+    const spaceCount = words.length - 1;
+  
+    return spaceCount;
+  }
+  
+  const InverseString = (text) => {
+    const reversedText = text.split('').reverse().join('');
+  
+    return reversedText;
+  }
+  
+  const power = (base, exponent) => {
+    const result = Math.pow(base, exponent);
+    
+    return result;
+  }
+  
+  const absoluteValue = (number) => {
+    const result = Math.abs(number);
+  
+    return result;
+  }
+  
+  const absoluteValueArray = (numbers) => {
+    const result = numbers.map((number) => Math.abs(number));
+  
+    return result;
+  }
+  
+  const circleSurface = (radius) => {
+    const surfaceArea = Math.PI * radius * radius;
+    const roundedSurfaceArea = Math.round(surfaceArea);
+  
+    return roundedSurfaceArea;
+  }
+  
+  const hypothenuse = (a, b) => {
+    const squareA = a * a;
+    const squareB = b * b;
+    const sumOfSquares = squareA + squareB;
+    const hypotenuse = Math.sqrt(sumOfSquares);
+  
+    return hypotenuse;
+  }
+  
+  const BMI = (weight, height) => {
+    const bmi = weight / (height * height);
+  
+    const roundedBMI = parseFloat(bmi.toFixed(2));
+  
+    return roundedBMI;
+  }
+  
 
-}
-const countSpaces = (text) => {
+  const createLanguagesArray = () => {
+    return ["Html", "CSS", "Java", "PHP"];
+  }
+  
 
-}
-const InverseString = (text) => {
+  const createNumbersArray = () => {
+    const numbers = [];
+    for (let i = 0; i <= 5; i++) {
+      numbers.push(i);
+    }
+    return numbers;
+  }
+  
 
-}
+  const replaceElement = (arr) => {
+    if (arr.length >= 3) {
+      arr[2] = "Javascript";
+    }
+    return arr;
+  }
+  
 
-const power = (x, y) => {
+  const addElement = (languages) => {
+    languages.push("Ruby", "Python");
+    
+    return languages;
+  }
+  
 
-}
-const absoluteValue = (num) => {
+  const addNumberElement = (numbers) => {
+    numbers.unshift(-2, -1);
+  
+    return numbers;
+  }
+  
 
-}
-const absoluteValueArray = (array) => {
+  const removeFirst = (languages) => {
+    languages.shift();
+  
+    return languages;
+  }
+  
 
-}
-const circleSurface = (radius) => {
+  const removeLast = (languages) => {
+    languages.pop();
+  
+    return languages;
+  }
+  
 
-}
-const hypothenuse = (ab, ac) => {
+  const convertStrToArr = (social_arr) => {
+    const socialNetworks = social_arr.split(',');
+  
+    return socialNetworks;
+  }
+  
 
-}
-const BMI = (weight, height) => {
+  const convertArrToStr = (languages) => {
+    const languagesString = languages.join(',');
+  
+    return languagesString;
+  }
+  
+  const sortArr = (social_arr) => {
 
-}
+    const socialNetworksSorted = social_arr.sort();
+  
+    return socialNetworksSorted;
+  }
+  
 
-const createLanguagesArray = () => {
-
-}
-
-const createNumbersArray = () => {
-
-}
-
-const replaceElement = (languages) => {
-
-}
-
-const addElement = (languages) => {
-
-}
-
-const addNumberElement = (numbers) => {
-
-}
-
-const removeFirst = (languages) => {
-
-}
-
-const removeLast = (languages) => {
-
-}
-
-const convertStrToArr = (social_arr) => {
-
-}
-
-const convertArrToStr = (languages) => {
-
-}
-
-const sortArr = (social_arr) => {
-
-}
-
-const invertArr = (social_arr) => {
-
-}
+  const invertArr = (social_arr) => {
+    const invertedArray = social_arr.reverse();
+  
+    return invertedArray;
+  }
+  
